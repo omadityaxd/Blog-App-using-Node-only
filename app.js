@@ -10,7 +10,7 @@ const app = express();
 //connecting to mongoDB
 
 const dbURI =
-  "mongodb+srv://netninjatestuser:test123@cluster0.q7qjrmn.mongodb.net/NinjasBlogsNode?retryWrites=true&w=majority";
+  "mongodb+srv://(enter your mongoDB username here):(enter your mongoDB password)@cluster0.q7qjrmn.mongodb.net/(your DB name on mongoDB)?retryWrites=true&w=majority";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
